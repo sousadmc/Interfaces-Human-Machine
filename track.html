@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="iRave.css">
+    <script src="iRave.js"></script>
+</head>
+
+<body onload="startTime(); showFriends()">
+    <div class="relogio">
+        <img id="relogios"   src="smartwatch_3.png" height="300" width="450" usemap="#smart">
+        <div id="txt"></div>
+        <map id="smart" name="smart">
+        <area alt="block" coords="300,105,310,134" shape="rect" onclick="Click();" ondblclick ="doubleClick();">
+        <area alt="back" coords="300,153,305,196" shape="rect" href="Irave.html">
+        </map>
+        <a href="search.html">
+            <img id="button16" src="plus.png"></a>
+        
+        <div class="zoom">
+            <button class="button button8" onclick="zoomin()">+</button>
+            <button class="button button8" onclick="zoomout()">-</button>
+        </div>
+            <div class="container" id="mine">
+                    <img id="map"   src="track.png" height="250" width="250">
+                    <img id="Diogo" src="diogo.png" style="height:40px; width:40px; position: absolute; top: 80px; left: 100px; z-index: 10; display: none">
+                    <img id="Francisco" src="pinto.png" style="height:40px; width:40px; position: absolute; top: 20px; left: 20px; z-index: 10; display: none">
+            </div>
+        </div>
+    </div>
+</body>                   
+</html>

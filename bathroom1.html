@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="iRave.css">
+    <script src="iRave.js"></script>
+</head>
+
+<body onload="startTime(); apply()">
+    <div class="relogio">
+        <img id="relogios"   src="smartwatch_3.png" height="300" width="450" usemap="#smart">
+        <div id="txt"></div>
+        <map id="smart" name="smart">
+        <area alt="block" coords="300,105,310,134" shape="rect" onclick="Click();" ondblclick ="doubleClick();">
+        <area alt="back" coords="300,153,305,196" shape="rect" href="line.html">
+        </map>
+        <a href="filterB.html">
+            <button class=" button9"></button></a>
+        
+        <div class="zoom">
+            <button class="button button8" onclick="zoomin1()">+</button>
+            <button class="button button8" onclick="zoomout1()">-</button>
+        </div>
+        <div class="container">
+            <img id="map"   src="bath1.png" height="250" width="250">
+        </div>
+        <div id="appl">Applying&#10;&#13;...</div>
+    </div>
+</body>                   
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="iRave.css">
+    <script src="iRave.js"></script>
+</head>
+
+<body onload="startTime(); friend(); checks()">
+    <div class="relogio">
+        <img id="relogios"   src="smartwatch_3.png" height="300" width="450" usemap="#smart">
+        <div id="txt"></div>
+        <map id="smart" name="smart">
+        <area alt="block" coords="300,105,310,134" shape="rect" onclick="Click();" ondblclick ="doubleClick();">
+        <area alt="back" coords="300,153,305,196" shape="rect" href="track.html">
+        </map>
+        <button class="button15" onclick="tracks()">Track</button>
+        <div id="alarmList1"></div>
+        
+    </div>
+</body>                   
+</html>

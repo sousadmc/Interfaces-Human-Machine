@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="iRave.css">
+    <script src="iRave.js"></script>
+</head>
+
+<body onload="startTime()">
+    <div class="relogio">
+        <img id="relogios"   src="smartwatch_3.png" height="300" width="450" usemap="#smart">
+        <div id="txt"></div>
+        <map id="smart" name="smart">
+        <area alt="block" coords="300,105,310,134" shape="rect" onclick="listPop(); Click();" ondblclick =" listPop(); doubleClick();">
+        <area alt="back" coords="300,153,305,196" shape="rect" onclick="goBack(); listPop()">
+        </map>
+        <div id="bands">SET ALARM</div>
+        <input type="time" id="number" value="18:00" step="300" min="0">
+        <div class="Ok">
+            <a  onclick="appendAlarm();">OK</a>
+            
+        </div>
+        <div id="alertsuccess">Alarm has been set</div>
+        <div id="alertinsuccess">Alarm not available</div>
+        <div id="alertinsuccess2">Alarm already added</div>
+    </div>
+</body>          
+</html>

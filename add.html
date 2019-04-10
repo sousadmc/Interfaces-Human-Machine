@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="iRave.css">
+    <script src="iRave.js"></script>
+</head>
+
+<body onload="startTime();">
+    <div class="relogio">
+        <img id="relogios"   src="smartwatch_3.png" height="300" width="450" usemap="#smart">
+        <div id="txt"></div>
+        <div id="bands">ID:</div>
+        <div id="input"></div>
+        <div id="id">Enter 5 digit number</div>
+        <map id="smart" name="smart">
+        <area alt="block" coords="300,105,310,134" shape="rect" onclick="Click();" ondblclick ="doubleClick();">
+        <area alt="back" coords="300,153,305,196" shape="rect" href="map.html">
+        </map>
+        <div class="numpad">
+            <img id="numpad" src="numpad.png" height="57" width="100" usemap="#numpad">
+            <map id="numpad" name="numpad">
+                <area alt="1" coords="1,1,32,18" shape="rect" onclick="myfunction('1')" value="1">
+                <area alt="2" coords="33,1,64,18" shape="rect" onclick="myfunction('2')" value="2">
+                <area alt="3" coords="65,1,96,18" shape="rect" onclick="myfunction('3')" value="3">
+                <area alt="4" coords="1,19,32,36" shape="rect" value="4" onclick="myfunction('4')">
+                <area alt="5" coords="33,19,64,36" shape="rect" onclick="myfunction('5')" value="5">
+                <area alt="6" coords="65,19,96,36" shape="rect" onclick="myfunction('6')" value="6">
+                <area alt="7" coords="1,37,32,54" shape="rect" onclick="myfunction('7')" value="7">
+                <area alt="8" coords="33,37,64,54" shape="rect" onclick="myfunction('8')" value="8">
+                <area alt="9" coords="65,37,96,54" shape="rect" onclick="myfunction('9')" value="9">
+            </map>
+        </div>
+        <div class="Ok1">
+            <a  onclick="sendRequest()">OK</a> 
+        </div>
+        <div class="back">
+            <button class="back1" onclick="deleteLast()"></button> 
+        </div>
+        <div id="invalidRequest">ID must have 5 digit</div>
+        <div id="invalidRequest1">ID not found</div>
+        <div id="invalidRequest2">Friend already added</div>
+        <div class="Request" id="Request">
+            <a>Send friend request to</a>
+            <div id="request"></div>
+            <button class="buttonY" onclick="fList()">Yes</button>
+            <button class="buttonN" onclick="closeRequest()">No</button>
+            
+        </div>
+    </div>
+</body>                   
+</html>

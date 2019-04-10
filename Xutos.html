@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="iRave.css">
+    <script src="iRave.js"></script>
+</head>
+
+<body onload="startTime()">
+    <div class="relogio">
+        <img id="relogios"   src="smartwatch_3.png" height="300" width="450" usemap="#smart">
+        <div id="txt"></div>
+        <map id="smart" name="smart">
+        <area alt="block" coords="300,105,310,134" shape="rect" onclick="Click();" ondblclick ="doubleClick();">
+        <area alt="back" coords="300,153,305,196" shape="rect" onclick="goBack();">
+        </map>
+        <img id="Xutos" src="Xutos_pontape%CC%81s.jpg" width="48">
+        <div id="band_txt">
+            <p>Stage Coreto </p>
+            <p>18:30 - 20:00</p>
+        </div>
+        <a onclick="selectConcert('Xutos');">
+            <button class="button button6" ></button></a>
+        
+    </div>
+</body>                   
+</html>
